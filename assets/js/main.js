@@ -1,3 +1,22 @@
+
+// Animate On Scroll
+AOS.init();
+
+// LightSense (Image Zoom)
+window.addEventListener('load', function () {
+    var el = document.querySelectorAll('img.lightsense');
+    Lightense(el, {
+        time: 300,
+        padding: 40,
+        offset: 40,
+        keyboard: true,
+        cubicBezier: 'cubic-bezier(.2, 0, .1, 1)',
+        background: 'rgb(16, 12, 16, 0.5)',
+        zIndex: 2147483647
+    });
+}, false);
+
+// Particle JS Settings
 particlesJS("particles-js", {
     "particles": {
         "number": {
@@ -109,17 +128,11 @@ particlesJS("particles-js", {
     "retina_detect": true
 });
 
+// Typed JS Settings
+
 var typed = new Typed('.typer', {
     strings: ["i'm a React.js Developer", "i'm a React-Native Dev.", "i'm a Front-end Developer", "i'm a Flutter Developer", "i'm a Mobile Developer"],
     typeSpeed: 40,
     backSpeed: 10,
     loop: true,
 });
-
-const animateWidth = (width, element) => {
-    updatedWidth = 0
-    while (updatedWidth != width) {
-        updatedWidth = updatedWidth + 1
-        element.style = `width: ${updatedWidth}%`
-    }
-}
