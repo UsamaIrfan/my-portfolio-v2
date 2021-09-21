@@ -131,7 +131,7 @@ particlesJS("particles-js", {
 // Typed JS Settings
 
 var typed = new Typed('.typer', {
-    strings: ["i'm a React.js Developer", "i'm a React-Native Dev.", "i'm a Front-end Developer", "i'm a Flutter Developer", "i'm a Mobile Developer"],
+    strings: ["i'm a React.js Developer", "i'm a React-Native Developer", "i'm a Front-end Developer", "i'm a Flutter Developer", "i'm a Mobile Developer"],
     typeSpeed: 40,
     backSpeed: 10,
     loop: true,
