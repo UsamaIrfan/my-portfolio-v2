@@ -52,6 +52,10 @@
 
     <!-- <link crossorigin="anonymous" href="/assets/styles/styles.css" media="screen" rel="stylesheet" /> -->
     <link crossorigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
+    <link crossorigin="anonymous" href="/assets/styles/custom.css" media="screen" rel="stylesheet" />
+
+
+    <script src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@1.1.x/dist/index.min.js"
         defer></script>
@@ -107,7 +111,7 @@
 
                                 <span class="block w-full h-0.5 bg-transparent group-hover:bg-yellow"></span>
                             </li>
-<!-- 
+                            <!-- 
                             <li class="group pl-6">
 
                                 <span @click="triggerNavItem('#clients')"
@@ -208,7 +212,7 @@
                                 class="font-header font-semibold text-white uppercase pt-0.5 cursor-pointer">Statistics</span>
 
                         </li>
-<!-- 
+                        <!-- 
                         <li class="py-2">
 
                             <span @click="triggerMobileNavItem('#blog')"
@@ -232,6 +236,9 @@
         <div>
             <div class="bg-center bg-cover bg-no-repeat relative py-8 js-count-particles">
 
+                <div class="fb-customerchat" page_id="104293008693659" minimized="true">
+                </div>
+
                 <div id="particles-js"
                     class="bg-center bg-cover bg-no-repeat absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to ">
                 </div>
@@ -246,7 +253,8 @@
                             <h1
                                 class="font-header text-white text-4xl sm:text-5xl md:text-6xl text-center sm:text-left">
                                 Hello I'm Usama Irfan!</h1>
-                            <p class="font-body sm:ml-1.5 text-white mt-4 text-lg uppercase"><span class="typer"></span>
+                            <p class="font-body ml-1.5 text-center md:text-left text-white mt-4 text-lg uppercase"><span
+                                    class="typer"></span>
                             </p>
                             <div class="flex flex-col sm:flex-row justify-center lg:justify-start pt-3 sm:pt-5">
                                 <div
@@ -260,10 +268,22 @@
                                     <a href="https://www.linkedin.com/in/usama-irfan/" class="pl-4">
                                         <i class='bx bxl-linkedin text-white hover:text-yellow text-2xl'></i>
                                     </a>
-                                    <a href="https://github.com/UsamaIrfan" class="pl-4">
+                                    <a href="https://github.com/UsamaIrfan" class="pl-4 pr-10">
                                         <i class='bx bxl-github text-white hover:text-yellow text-2xl'></i>
                                     </a>
                                 </div>
+                            </div>
+                            <div class="w-full flex justify-center md:justify-start  pointer-events-auto">
+                                <a href="./assets/downloads/Usama Irfan Developer.pdf" download>
+                                    <button
+                                        class="bg-primary transition-all hover:bg-yellow focus:outline-none focus:ring-2 focus:ring-yellow focus:ring-opacity-50 text-white text-center px-4 py-2 rounded">Download
+                                        Resume</button>
+                                </a>
+                                <!-- <div class="ml-2 mt-2 pointer-events-auto">
+                                    <div class="fb-messengermessageus" messenger_app_id="2013679675434004"
+                                        page_id="104293008693659" color="white" size="standard">
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -332,7 +352,8 @@
                         </div>
                         <div data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine" class="pt-6">
                             <div class="flex justify-between items-end">
-                                <h4 class="font-body font-semibold text-black uppercase">MongoDB / Express / Node.js</h4>
+                                <h4 class="font-body font-semibold text-black uppercase">MongoDB / Express / Node.js
+                                </h4>
                                 <h3 class="font-body font-bold text-primary text-3xl">70%
                                 </h3>
                             </div>
@@ -486,6 +507,13 @@
                             alt="portfolio image">
                     </a>
                 </div>
+                <div class="w-full text-center my-5">
+                    <a href="./portfolio/AllWeb.html">
+                        <button
+                            class="bg-primary text-xl hover:border-primaryDark text-white text-center px-4 py-3 rounded mx-auto transition-all transform hover:scale-105 hover:bg-primaryDark">View
+                            All</button>
+                    </a>
+                </div>
                 <div class="bg-grey-50 rounded-md p-3 mt-2">
                     <h3 class="font-header font-medium text-black text-xl sm:text-2xl lg:text-3xl pt-2 text-center m-0">
                         My work on Mobile development</h3>
@@ -563,8 +591,10 @@
                         <div class="md:w-2/5">
                             <div class="flex justify-center md:justify-start">
                                 <span class="flex-shrink-0">
-                                    <h3>Code4Client</h3>
-                                    <!-- <img src="/assets/img/logo-spotify.svg" class="w-32 h-auto" alt="company logo" /> -->
+                                    <!-- <h3>Code4Client</h3> -->
+                                    <div class="py-2 px-4 bg-grey-70 rounded">
+                                        <img src="/assets/img/code4client.png" class="w-42 h-auto" alt="company logo" />
+                                    </div>
                                 </span>
                                 <div class="relative w-full ml-3 hidden md:block">
                                     <span
@@ -615,7 +645,7 @@
                                 <div class="mt-1 flex">
                                     <i class='bx bxs-right-arrow text-primary hidden md:block'></i>
                                     <div class="md:pl-8 md:-mt-1">
-                                        <span class="font-body font-bold text-grey-40 block">Dev 2020 - Present</span>
+                                        <span class="font-body font-bold text-grey-40 block">Dec 2020 - Present</span>
                                         <span
                                             class="font-header font-bold text-xl text-primary uppercase block pt-2">Web
                                             and Mobile Developer</span>
@@ -860,6 +890,35 @@
         </div>
 
     </div>
+    <!-- <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '2013679675434004',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v12.0'
+            });
+        };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '2013679675434004',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v2.11'
+            });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <script src="./assets/js/particles.js"></script>
     <script src="./assets/js/typed.js-master/lib/typed.min.js"></script>

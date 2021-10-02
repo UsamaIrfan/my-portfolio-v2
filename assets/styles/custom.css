@@ -1,0 +1,43 @@
+#particles-js {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #047857;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.custom-hover-image {
+  transition: all 0.2s ease;
+  color: #fff;
+  z-index: 10000000;
+  background-clip: content-box;
+  position: relative;
+}
+
+.custom-hover-text {
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  left: 50%;
+  color: #fff !important;
+  background-color: #047857bd;
+  transform: translate(-50%, -100%);
+  border-radius: 25px;
+  opacity: 0;
+}
+
+.custom-hover-image:hover .custom-hover-text {
+  opacity: 1;
+}
+
+.custom-hover-image:hover {
+  background-color: #047857bd;
+}
